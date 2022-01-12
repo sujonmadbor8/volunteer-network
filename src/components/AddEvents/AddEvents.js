@@ -16,7 +16,7 @@ const AddEvents = () => {
       name: data.name,
       imageURL: imageURL,
     };
-    const url = `http://localhost:5055/addEvent`;
+    const url = `https://salty-thicket-89909.herokuapp.com/addEvent`;
     console.log(data);
     fetch(url, {
       method: "POST",

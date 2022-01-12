@@ -5,7 +5,7 @@ import "./Home.css";
 const Home = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5055/events`)
+    fetch(`https://salty-thicket-89909.herokuapp.com/events`)
       .then((response) => response.json())
       .then((data) => setEvents(data));
   }, []);
